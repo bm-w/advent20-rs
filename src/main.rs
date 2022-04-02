@@ -4,7 +4,7 @@
 extern crate lazy_static;
 
 mod util;
-util::mod_days![01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11];
+util::mod_days![01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12];
 
 fn main() {
 	println!("Day 1; part 1: {}, part 2: {}", day01::part1(), day01::part2());
@@ -18,4 +18,5 @@ fn main() {
 	println!("Day 9; part 1: {}, part 2: {}", day09::part1(), day09::part2());
 	println!("Day 10; part 1: {}, part 2: {}", day10::part1(), day10::part2());
 	println!("Day 11; part 1: {}, part 2: {}", day11::part1(), day11::part2());
+	println!("Day 12; part 1: {}, part 2: {}", day12::part1(), day12::part2());
 }
