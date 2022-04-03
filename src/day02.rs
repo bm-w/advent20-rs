@@ -71,7 +71,7 @@ mod parsing {
 		use RangeError::*;
 		let (from, through) = s.split_once('-').ok_or(InvalidFormat)?;
 		let from = from.parse().map_err(InvalidFrom)?;
-		let through = through.parse().map_err(InvalidFrom)?;
+		let through = through.parse().map_err(InvalidThrough)?;
 		Ok(from..=through)
 	}
 
